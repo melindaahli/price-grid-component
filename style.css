@@ -1,0 +1,248 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    width: 100%;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+html, body {
+    max-width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(204, 43%, 93%); /* light gray */
+}
+
+li {
+    list-style-type: none;
+}
+
+div, div > li {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        width: 640px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        position: relative;
+        top: 25%;
+        filter: drop-shadow(0 0 0.75rem hsl(0, 2%, 90%)); /*light gray*/
+    }
+    
+    .motto {
+        font-weight: 700;
+        font-size: 22px;
+        color:hsl(179, 62%, 43%);
+        margin-top:10px;
+    }
+    
+    .motto-caption {
+        color: hsl(71, 73%, 54%);
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    .join-intro {
+        opacity: 50%;
+        line-height: 1.5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: start;
+        height: 36px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+    
+    .price {
+        font-size: 30px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    
+    .price-time {
+        vertical-align: middle;
+        line-height: 36px;
+        opacity: 50%;
+    }
+    
+    div.join-community > p {
+        background-color: white;
+        padding: 0px;
+    }
+    
+    .join-community {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+        border-radius: 8px 8px 0px 0px;
+        padding: 30px;
+    }
+    
+    .subscription {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color:hsl(179, 62%, 43%);
+        border-radius: 0px 0px 0px 8px;
+        color: white;
+    }
+    
+    .benefits {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color:hsl(179, 47%, 52%);
+        border-radius: 0px 0px 8px 0px;
+        color: white;
+        padding-bottom: 20px;
+    }
+    
+    .subheading {
+        margin-top: 35px;
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .faded-text {
+        font-size: 12px;
+        opacity: 50%;
+        line-height: 1.5;
+    }
+    
+    button {
+        background-color: hsl(71, 73%, 54%);
+        border: none;
+        border-radius: 5px;
+        filter: drop-shadow(0 0 0.15rem hsl(196, 6%, 46%));
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        margin-top: 30px;
+        width: 85%;
+        height: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 699px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width:70%;
+        margin: 0 auto;
+        position: relative;
+        top: 10%;
+        filter: drop-shadow(0 0 0.75rem hsl(0, 2%, 90%)); /*light gray*/
+    }
+
+    .motto {
+        font-weight: 700;
+        font-size: 22px;
+        color:hsl(179, 62%, 43%);
+        margin-top:10px;
+    }
+    
+    .motto-caption {
+        color: hsl(71, 73%, 54%);
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    .join-intro {
+        opacity: 50%;
+        line-height: 2;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    ul {padding-left: 30px;
+        padding-right: 30px;}
+
+    .join-community {
+        background-color: white;
+        border-radius: 8px 8px 0px 0px;
+        padding: 30px;
+    }
+    .subscription {
+        background-color:hsl(179, 62%, 43%);
+        color: white;
+
+    }
+
+    .price {
+        font-size: 30px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    
+    .price-time {
+        vertical-align: middle;
+        line-height: 36px;
+        opacity: 50%;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: start;
+        height: 36px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+
+    .subheading {
+        margin-top: 35px;
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 19px;
+    }
+    
+    .benefits {
+        background-color:hsl(179, 47%, 52%);
+        border-radius: 0px 0px 8px 8px;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .faded-text {
+        font-size: 16px;
+        opacity: 60%;
+        line-height: 1.5;
+    }
+
+    button {
+        background-color: hsl(71, 73%, 54%);
+        border: none;
+        border-radius: 5px;
+        filter: drop-shadow(0 0 0.15rem hsl(196, 6%, 46%));
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
+    }
+}
